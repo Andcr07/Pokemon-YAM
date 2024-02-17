@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0p7vse2gfwr2"]
+
+[ext_resource type="Script" path="res://OpMon/Scenes/Interface/Camera.gd" id="1"]
+
+[node name="Camera3D" type="Camera2D"]
+anchor_mode = 0
+zoom = Vector2(2, 2)
+editor_draw_drag_margin = true
+script = ExtResource("1")

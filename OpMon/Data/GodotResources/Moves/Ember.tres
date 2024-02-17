@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Move" load_steps=2 format=3 uid="uid://dyh5momr2rbdx"]
+
+[ext_resource type="Script" path="res://OpMon/Objects/Move.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "EMBER"
+power = 40
+type = 6
+accuracy = 100
+category = 1
+never_fails = false
+max_power_points = 25
+priority = 0
+pre_effect = Array[Resource("res://Objects/MoveEffect.gd")]([])
+post_effect = Array[Resource("res://Objects/MoveEffect.gd")]([])
+fail_effect = Array[Resource("res://Objects/MoveEffect.gd")]([])
+move_animation = "PULSING_SCOOT"

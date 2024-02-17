@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://OpMon/Scenes/Events/Trigger/Teleporter.gd" id="1"]
+[ext_resource type="PackedScene" path="res://OpMon/Scenes/Events/Trigger/Trigger.tscn" id="2"]
+
+[node name="Teleporter" instance=ExtResource( 2 )]
+script = ExtResource( 1 )

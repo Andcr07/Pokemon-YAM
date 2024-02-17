@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="Nature" load_steps=2 format=3 uid="uid://c8h3rhe7isy65"]
-
-[ext_resource type="Script" path="res://Objects/Nature.gd" id="1"]
-
-[resource]
-script = ExtResource("1")
-id = "BOT"
-bonus = -1
-malus = -1

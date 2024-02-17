@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="OpMon"
-run/main_scene="res://Scenes/MainMenu/MainMenu.tscn"
-config/features=PackedStringArray("4.1")
-config/icon="res://icon.png"
+config/name="Pokemon-YAM"
+run/main_scene="res://Scenes/Main.tscn"
+config/features=PackedStringArray("4.2")
+config/icon="res://OpMon/icon.png"
 
 [audio]
 
@@ -21,7 +21,7 @@ buses/default_bus_layout=""
 
 [autoload]
 
-PlayerData="*res://Utils/PlayerData.gd"
+PlayerData="*res://OpMon/Utils/PlayerData.gd"
 
 [discord_presence]
 
@@ -156,3 +156,7 @@ locale/translations=PackedStringArray("res://Data/translations.en.translation", 
 [locale]
 
 translations=PackedStringArray("res://Data/translations.en.translation", "res://Data/translations.fr.translation")
+
+[rendering]
+
+renderer/rendering_method="mobile"

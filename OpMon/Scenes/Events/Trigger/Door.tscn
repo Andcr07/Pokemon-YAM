@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://OpMon/Scenes/Events/Trigger/Teleporter.tscn" id="1"]
+[ext_resource type="SpriteFrames" path="res://OpMon-Data/Sprites/scenery/Doors.tres" id="2"]
+[ext_resource type="Script" path="res://OpMon/Scenes/Events/Trigger/Door.gd" id="3"]
+[ext_resource type="Script" path="res://OpMon/Scenes/Events/SpriteInEditor.gd" id="4"]
+
+[node name="Door" instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
+position = Vector2( 8, 6 )
+scale = Vector2( 0.523809, 0.5 )
+frames = ExtResource( 2 )
+animation = "wooden_door"
+script = ExtResource( 4 )
