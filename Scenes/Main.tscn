@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://d3744358222nh"]
+[gd_scene load_steps=2 format=3 uid="uid://d3744358222nh"]
+
+[ext_resource type="Texture2D" uid="uid://p240hci87gxl" path="res://OpMon/icon.png" id="1_h24hm"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(417, 295)
+scale = Vector2(0.990967, 1)
+texture = ExtResource("1_h24hm")

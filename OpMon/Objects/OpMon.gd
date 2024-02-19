@@ -2,11 +2,11 @@ extends Object
 
 class_name OpMon
 
-const Type = preload("res://Objects/Enumerations.gd").Type
-const Stats = preload("res://Objects/Enumerations.gd").Stats
-const Status = preload("res://Objects/Enumerations.gd").Status
-const TYPE_EFFECTIVENESS = preload("res://Objects/Enumerations.gd").TYPE_EFFECTIVENESS
-const MOVE_ANIMATIONS = preload("res://Objects/Enumerations.gd").MOVE_ANIMATIONS
+const Type = preload("res://OpMon/Objects/Enumerations.gd").Type
+const Stats = preload("res://OpMon/Objects/Enumerations.gd").Stats
+const Status = preload("res://OpMon/Objects/Enumerations.gd").Status
+const TYPE_EFFECTIVENESS = preload("res://OpMon/Objects/Enumerations.gd").TYPE_EFFECTIVENESS
+const MOVE_ANIMATIONS = preload("res://OpMon/Objects/Enumerations.gd").MOVE_ANIMATIONS
 
 var stats = [0, 0, 0, 0, 0, 0]
 var ev = [0, 0, 0, 0, 0, 0]
@@ -157,7 +157,7 @@ class OpMove:
 	var power_points: int
 	var data: Move
 	
-	const Stats = preload("res://Objects/Enumerations.gd").Stats
+	const Stats = preload("res://OpMon/Objects/Enumerations.gd").Stats
 	
 	# Private variables used to calculate damages
 	# Hp lost by the defending OpMon
