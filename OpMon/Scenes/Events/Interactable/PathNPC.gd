@@ -1,5 +1,5 @@
 @tool
-extends "res://Scenes/Events/Interactable/DialogNPC.gd"
+extends "res://OpMon/Scenes/Events/Interactable/DialogNPC.gd"
 
 enum Dir {LEFT = 0, RIGHT = 1, UP = 2, DOWN = 3, STAND = 4}
 

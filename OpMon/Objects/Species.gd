@@ -2,8 +2,8 @@ extends Resource
 
 class_name Species
 
-const Type = preload("res://Objects/Enumerations.gd").Type
-const Stats = preload("res://Objects/Enumerations.gd").Stats
+const Type = preload("res://OpMon/Objects/Enumerations.gd").Type
+const Stats = preload("res://OpMon/Objects/Enumerations.gd").Stats
 
 @export_group("Properties")
 @export var id: String # ID used for storage in the code and for the translations

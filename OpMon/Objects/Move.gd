@@ -5,7 +5,7 @@ extends Resource
 
 class_name Move
 
-const Type = preload("res://Objects/Enumerations.gd").Type
+const Type = preload("res://OpMon/Objects/Enumerations.gd").Type
 
 enum Category {PHYSICAL, SPECIAL, STATUS}
 

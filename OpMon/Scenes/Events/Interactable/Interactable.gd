@@ -5,7 +5,7 @@ class_name Iteractable
 
 var _map_manager
 
-const _constants = preload("res://Utils/Constants.gd")
+const _constants = preload("res://OpMon/Utils/Constants.gd")
 
 func _ready():
 	_map_manager = get_parent().get_parent()

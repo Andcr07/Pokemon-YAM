@@ -4,7 +4,7 @@ extends Node
 
 class_name MapManager
 
-const _constants = preload("res://Utils/Constants.gd")
+const _constants = preload("res://OpMon/Utils/Constants.gd")
 
 var _first_map := ""
 var _first_player_pos := Vector2(0,0)
@@ -55,7 +55,7 @@ func _ready():
 	
 func _input(event):
 	if event.is_action_pressed("menu") and interface_closed_delay < 0 and not player_instance.is_moving() and interface.is_empty():
-		var menu = load("res://Scenes/GameMenu/GameMenu.tscn").instantiate()
+		var menu = load("res://OpMon/Scenes/GameMenu/GameMenu.tscn").instantiate()
 		pause_player()
 		load_interface(menu)
 	

@@ -3,11 +3,11 @@ extends Area2D
 
 class_name Trigger
 
-const PlayerObject = preload("res://Scenes/Events/Interactable/Player.gd")
+const PlayerObject = preload("res://OpMon/Scenes/Events/Interactable/Player.gd")
 
 var _map_manager
 
-const _constants = preload("res://Utils/Constants.gd")
+const _constants = preload("res://OpMon/Utils/Constants.gd")
 
 func _ready():
 	_map_manager = get_parent().get_parent()

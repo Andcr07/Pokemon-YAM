@@ -2,7 +2,7 @@ extends Resource
 
 class_name Nature
 
-const Stats = preload("res://Objects/Enumerations.gd").Stats
+const Stats = preload("res://OpMon/Objects/Enumerations.gd").Stats
 
 @export var id: String # used for storage in the code and in the translations
 @export var bonus: Stats

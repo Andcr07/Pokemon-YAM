@@ -2,7 +2,7 @@ extends Interface
 
 class_name BattleScene
 
-const Stats = preload("res://Objects/Enumerations.gd").Stats
+const Stats = preload("res://OpMon/Objects/Enumerations.gd").Stats
 
 var player_team: OpTeam
 var opponent_team: OpTeam
@@ -91,7 +91,7 @@ var _selector_mode = SelectorMode.NONE
 
 # Loads the OpMon selector
 func _load_opmon_selector(selector_mode) -> void:
-	opmon_selector = load("res://Scenes/Interface/Team/Team.tscn").instantiate()
+	opmon_selector = load("res://OpMon/Scenes/Interface/Team/Team.tscn").instantiate()
 	opmon_selector.set_map(self._map_manager)
 	opmon_selector.mode = opmon_selector.Mode.SELECTOR
 	add_child(opmon_selector)
@@ -148,7 +148,7 @@ func item_selected() -> void:
 # When the move choice has been selected in the base menu
 func move_selected():
 	$BaseDialog.visible = false
-	move_dialog = load("res://Scenes/Battle/MoveDialog.tscn").instantiate()
+	move_dialog = load("res://OpMon/Scenes/Battle/MoveDialog.tscn").instantiate()
 	move_dialog.set_moves(player_opmon.moves)
 	move_dialog.position = $BaseDialog.position
 	add_child(move_dialog)

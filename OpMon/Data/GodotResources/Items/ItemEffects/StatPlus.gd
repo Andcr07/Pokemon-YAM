@@ -2,7 +2,7 @@ extends ItemEffect
 
 class_name StatPlus
 
-const Stats = preload("res://Objects/Enumerations.gd").Stats
+const Stats = preload("res://OpMon/Objects/Enumerations.gd").Stats
 
 @export var stat: Stats
 @export var change: int

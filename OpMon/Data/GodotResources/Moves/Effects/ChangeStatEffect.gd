@@ -2,7 +2,7 @@ extends MoveEffect
 
 class_name ChangeStatEffect
 
-const Stats = preload("res://Objects/Enumerations.gd").Stats
+const Stats = preload("res://OpMon/Objects/Enumerations.gd").Stats
 
 @export var stat: Stats
 @export var change: int

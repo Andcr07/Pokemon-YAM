@@ -2,7 +2,7 @@ extends Resource
 
 class_name Item
 
-const BagCategory = preload("res://Objects/Enumerations.gd").BagCategory
+const BagCategory = preload("res://OpMon/Objects/Enumerations.gd").BagCategory
 
 enum UseType {
 	OVERWORLD,

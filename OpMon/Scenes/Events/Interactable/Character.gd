@@ -1,6 +1,6 @@
 @tool
 # Describes the physics of a basic character
-extends "res://Scenes/Events/Interactable/Interactable.gd"
+extends "res://OpMon/Scenes/Events/Interactable/Interactable.gd"
 
 @export var textures: SpriteFrames:
 	set(new_textures):

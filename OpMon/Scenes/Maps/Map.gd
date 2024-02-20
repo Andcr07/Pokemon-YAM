@@ -1,12 +1,12 @@
 @tool
 extends Node2D
 
-const PlayerObject = preload("res://Scenes/Events/Interactable/Player.gd")
+const PlayerObject = preload("res://OpMon/Scenes/Events/Interactable/Player.gd")
 
 signal map_loaded
 signal map_entered(map)
 
-const _constants = preload("res://Utils/Constants.gd")
+const _constants = preload("res://OpMon/Utils/Constants.gd")
 
 @export var adjacent_maps_names := []:
 	set(new_adjacent_maps_names):

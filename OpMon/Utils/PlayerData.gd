@@ -30,16 +30,16 @@ func _load_dir(path: String) -> Array[Resource]:
 
 func _load_resources():
 	print("Loading resources...")
-	for species in _load_dir("res://Data/GodotResources/Species/"):
+	for species in _load_dir("res://OpMon/Data/GodotResources/Species/"):
 		res_species[species.id] = species
 	print("Species loaded.")
-	for move in _load_dir("res://Data/GodotResources/Moves/"):
+	for move in _load_dir("res://OpMon/Data/GodotResources/Moves/"):
 		res_move[move.id] = move
 	print("Moves loaded.")
-	for nature in _load_dir("res://Data/GodotResources/Natures/"):
+	for nature in _load_dir("res://OpMon/Data/GodotResources/Natures/"):
 		res_nature[nature.id] = nature
 	print("Natures loaded.")
-	for item in _load_dir("res://Data/GodotResources/Items/"):
+	for item in _load_dir("res://OpMon/Data/GodotResources/Items/"):
 		res_item[item.id] = item
 	print("Items loaded. All resources are now loaded.")
 

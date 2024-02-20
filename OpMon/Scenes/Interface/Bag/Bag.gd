@@ -5,7 +5,7 @@ extends Interface
 # it must not be present at the end of the list.
 const LIST_SIZE := 11
 
-const Stats = preload("res://Objects/Enumerations.gd").Stats
+const Stats = preload("res://OpMon/Objects/Enumerations.gd").Stats
 
 # The different modes of the bag
 enum Mode {

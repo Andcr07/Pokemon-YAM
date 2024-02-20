@@ -2,7 +2,7 @@
 # For the Player as a set of data, see Playerdata
 
 @tool
-extends "res://Scenes/Events/Interactable/Character.gd"
+extends "res://OpMon/Scenes/Events/Interactable/Character.gd"
 
 const InteractableClass = preload("Interactable.gd")
 

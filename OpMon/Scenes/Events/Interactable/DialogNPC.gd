@@ -1,5 +1,5 @@
 @tool
-extends "res://Scenes/Events/Interactable/Character.gd"
+extends "res://OpMon/Scenes/Events/Interactable/Character.gd"
 
 @export var dialog_key := ""
 

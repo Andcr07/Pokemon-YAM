@@ -1,22 +1,22 @@
 @tool
-extends "res://Scenes/Events/Interactable/Character.gd"
+extends "res://OpMon/Scenes/Events/Interactable/Character.gd"
 
 const PlayerClass = preload("Player.gd")
-const OpTeam = preload("res://Objects/OpTeam.gd")
-const OpMon = preload("res://Objects/OpMon.gd")
+const OpTeam = preload("res://OpMon/Objects/OpTeam.gd")
+const OpMon = preload("res://OpMon/Objects/OpMon.gd")
 
 var opponent_team: OpTeam
 
 func _ready():
 	super._ready()
 	if not Engine.is_editor_hint():
-		var tackle = load("res://Data/GodotResources/Moves/Tackle.tres")
-		var harden = load("res://Data/GodotResources/Moves/Harden.tres")
-		var ember = load("res://Data/GodotResources/Moves/Ember.tres")
-		var bot_nature = load("res://Data/GodotResources/Natures/Bot.tres")
-		var oopmon = OpMon.new("", load("res://Data/GodotResources/Species/Carnapple.tres"), 10, 
+		var tackle = load("res://OpMon/Data/GodotResources/Moves/Tackle.tres")
+		var harden = load("res://OpMon/Data/GodotResources/Moves/Harden.tres")
+		var ember = load("res://OpMon/Data/GodotResources/Moves/Ember.tres")
+		var bot_nature = load("res://OpMon/Data/GodotResources/Natures/Bot.tres")
+		var oopmon = OpMon.new("", load("res://OpMon/Data/GodotResources/Species/Carnapple.tres"), 10, 
 		[tackle, harden, null, null], bot_nature)
-		var oopmon2 = OpMon.new("", load("res://Data/GodotResources/Species/Furnurus.tres"), 10, 
+		var oopmon2 = OpMon.new("", load("res://OpMon/Data/GodotResources/Species/Furnurus.tres"), 10, 
 		[ember, harden, tackle, null], bot_nature)
 		opponent_team = OpTeam.new([oopmon, oopmon2, null, null, null, null])
 
@@ -28,7 +28,7 @@ func interact(player: PlayerClass):
 	_paused = true
 	change_faced_direction(player.get_direction()) # Changes the faced direction of the NPC to face the player
 	_map_manager.pause_player()
-	var battle_scene = load("res://Scenes/Battle/BattleScene.tscn").instantiate()
+	var battle_scene = load("res://OpMon/Scenes/Battle/BattleScene.tscn").instantiate()
 	battle_scene.init(_map_manager.player_data.team, opponent_team)
 	_map_manager.load_interface(battle_scene)
 
